@@ -25,6 +25,9 @@ When creating a project it is important to think about organization of your code
         - else, clicking the box changes to "O", and player is set back to 1
 
 - As a user, I can't click on a square that has already been marked.
+    - Create a branch named cant-click
+    - Add a condition to the if/else statements using && stating that the box must equal null for the statement to be executed
+
 - As a user, when either my partner or I win the game (three squares in a row: horizontally, vertically, or diagonally) I can see a notice telling me which player won.
 - As a user, I can't continue playing the game after the game has been won.
 - As a user, if there are no more squares available, I can see a notice telling me that the game has ended.

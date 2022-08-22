@@ -7,12 +7,12 @@ const App = () => {
   const [players, setPlayers] = useState(1)
 
     const handleGamePlay = (index) => {
-      if (players === 1) {
+      if (players === 1 && squares[index] === null) {
         let newSquares = [...squares]
         newSquares[index] = "X"
         setSquares(newSquares)
         setPlayers(2)
-      } else {
+      } else if (players === 2 && squares[index] === null) {
         let newSquares = [...squares]
         newSquares[index] = "O"
         setSquares(newSquares)
