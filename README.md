@@ -12,7 +12,9 @@ When creating a project it is important to think about organization of your code
 - Created a div to make a css class in order to create grid
 
 - As a user, I can click on a square to mark it.
-
+- Create a handleClick/handleGamePlay function 
+- handleGamePlay marks boxes on click
+- Add onClick to Square div
 
 - As a user, my partner can click on a square after me and see their mark.
 - As a user, I can't click on a square that has already been marked.
