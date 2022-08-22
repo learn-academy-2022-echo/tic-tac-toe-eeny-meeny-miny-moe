@@ -5,6 +5,7 @@ const Square = (props) => {
      props.handleGamePlay(props.index)
      
    }
+   props.endGame(props.squares)
   return (
     <>
   
