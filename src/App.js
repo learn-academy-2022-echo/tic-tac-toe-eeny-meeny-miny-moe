@@ -4,12 +4,20 @@ import './App.css'
 
 const App = () => {
   const [squares, setSquares] = useState(Array(9).fill(null))
+  const [players, setPlayers] = useState(1)
 
     const handleGamePlay = (index) => {
-       let newSquares = [...squares]
+      if (players === 1) {
+        let newSquares = [...squares]
         newSquares[index] = "X"
-       setSquares(newSquares)
-console.log(newSquares[index])
+        setSquares(newSquares)
+        setPlayers(2)
+      } else {
+        let newSquares = [...squares]
+        newSquares[index] = "O"
+        setSquares(newSquares)
+        setPlayers(1)
+      }
     }
 
 
