@@ -29,6 +29,12 @@ When creating a project it is important to think about organization of your code
     - Add a condition to the if/else statements using && stating that the box must equal null for the statement to be executed
 
 - As a user, when either my partner or I win the game (three squares in a row: horizontally, vertically, or diagonally) I can see a notice telling me which player won.
+    - Create a branch named winner
+    - Declare a new function called engGame that determines winning conditions
+        - Have an array with all the possible winning index combinations
+        - Write a for loop that iterates through that array
+            - if the tic tac toe values at the indexes are equal to each other, that player has won
+
 - As a user, I can't continue playing the game after the game has been won.
 - As a user, if there are no more squares available, I can see a notice telling me that the game has ended.
 - As a user, I can click on a restart button that will clear the game board.
